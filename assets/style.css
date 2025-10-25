@@ -1,27 +1,165 @@
-.css-j5r0tf {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: #7e4a95;
-  }
-  
-  .diagnosis {
-    color: #fff;
-    padding: 0.2em 0.5em;
-    border-radius: 0.5em;
-  }
-  
-  .diagnosis.benign {
-    background-color: #01DB4B
-  }
-  
-  .diagnosis.malicious {
-    background-color: #ff4b4b
-  }
 
-  .logo {
+
+
+
+#MainMenu { visibility: hidden; }
+
+footer { visibility: hidden; }
+
+
+
+.stApp {
+
+    background-color: #f7f7f7;
+
+    color: #1c1c1c;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+
+
+
+/* Target the entire sidebar container (common Streamlit class) */
+
+.st-emotion-cache-1cypcdb { 
+
+    background-color: #ffffff;
+
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Style for the slider labels */
+
+.st-emotion-cache-10trblm {
+
+    font-weight: 600;
+
+    color: #4a4a4a;
+
+}
+
+
+
+/* Custom styling for the main header (MEDICA) in the sidebar */
+
+.stSidebar > div:first-child h1 {
+
+    color: #7e4a95 !important; 
+
+    border-bottom: 2px solid #e0e0e0;
+
+    padding-bottom: 0.5rem;
+
+    margin-bottom: 1rem;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+
+/* Custom styling for the main content container (Used for headers, predictions, etc.) */
+
+.css-j5r0tf {
+
+    padding: 1.5rem;
+
+    border-radius: 0.75rem;
+
+    background-color: #7e4a95; 
+
+    color: #ffffff; 
+
+    margin-bottom: 1.5rem;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Generic diagnosis label styling */
+
+.diagnosis {
+
+    font-weight: bold;
+
+    font-size: 1.25em;
+
+    padding: 0.3em 0.8em;
+
+    border-radius: 0.75em;
+
+    color: #1c1c1c; 
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* Benign (0) */
+
+.diagnosis.benign {
+
+    background-color: #8cffb5; 
+
+}
+
+
+
+/* Malicious (1) */
+
+.diagnosis.malicious {
+
+    background-color: #ff8c8c;
+
+}
+
+
+
+
+
+
+
+/* Style for the logo image */
+
+.logo {
+
     position: absolute;
+
     top: 10px;
+
     right: 10px;
-    width: 100px;  
+
+    width: 100px;
+
     height: auto;
+
+    border-radius: 50%; 
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Style the tabs for the educational resources */
+
+.stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
+
+    font-weight: bold;
+
+    color: #7e4a95;
+
 }
